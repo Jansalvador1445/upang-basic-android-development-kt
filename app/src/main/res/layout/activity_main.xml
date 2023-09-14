@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:inputType="number"
+        android:id="@+id/edFirst"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:layout_below="@+id/edFirst"
+        android:inputType="number"
+        android:id="@+id/edSecond"/>
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSecond"
+        android:id="@+id/btnAdd"/>
+
+    <Button
+        android:text="Minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSecond"
+        android:layout_toRightOf="@id/btnAdd"
+        android:id="@+id/btnMinus"/>
+
+    <Button
+        android:text="Divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSecond"
+        android:layout_toRightOf="@id/btnMinus"
+        android:id="@+id/btnDivide"/>
+
+    <Button
+        android:text="Times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSecond"
+        android:layout_toRightOf="@id/btnDivide"
+        android:id="@+id/btnTimes"/>
+
+</RelativeLayout>
